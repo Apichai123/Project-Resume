@@ -5,11 +5,20 @@
   <title>Project Resume</title>
   <script src="js/jquery-3.4.1.min.js"></script>
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="js/resume.js"></script>
   <link rel="stylesheet" href="css/resume.css">
+
+  <script>
+      $(document).on('click', '.remove', function () {
+          $(this).parent('div').remove();
+      });
+  </script>
+
 </head>
 
 <body>
+
 <div class="columns-block container">
 <div class="left-col-block blocks">
   <header class="header">
@@ -17,25 +26,25 @@
       <img src="img/api_p.jpg" style="max-width:100%;height:auto;">
     </div>
     <div class="content">
-      <h1>MR. Apichai Phongsanee (Beer)</h1>
-      <span class="lead">Software Supervisor</span>
+      <h1 id="firstname" data-toggle="tooltip" title="Click here to change the name." onclick=rename('firstname')>MR. Apichai Phongsanee (Beer)</h1>
+       <span class="lead">Software Supervisor</span>
 
-      <div class="about-text">
-        <p>
-          Over 10 years experience with software development of automatic Teller Machine ATM,
-          automatic deposit machine (CDM / ADM),
-          Cheque deposit Machine and Passbook Update Machine (PUM) to be able to use in the banking network according to the requirement of each bank,
-          Which are many local banks and some foreign banks.
-        </p>
+       <div class="about-text">
+         <p>
+           Over 10 years experience with software development of automatic Teller Machine ATM,
+           automatic deposit machine (CDM / ADM),
+           Cheque deposit Machine and Passbook Update Machine (PUM) to be able to use in the banking network according to the requirement of each bank,
+           Which are many local banks and some foreign banks.
+         </p>
 
-        <span class="lead">EDUCATION</span>
-        <p> Mahanakorn University of Technology </p>
-        <p> Bachelor of Engineering in Computer Engineering </p>
-      </div>
-    </div>
+         <span class="lead">EDUCATION</span>
+         <p> Mahanakorn University of Technology </p>
+         <p> Bachelor of Engineering in Computer Engineering </p>
+       </div>
+     </div>
 
-  </header>
-  <!-- .header-->
+   </header>
+   <!-- .header-->
 </div>
 <!-- .left-col-block -->
 
@@ -90,6 +99,7 @@
           <div class="row">
               <div class="progress-wrapper">
                 <div class="progress-item">
+                  <span class="remove"><i class="material-icons" data-toggle="tooltip" title=" Click here to remove Skill. ">remove_circle_outline  </i></span>
                   <span class="progress-title">.Net C#</span>
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="62" aria-valuemin="0"
@@ -101,6 +111,7 @@
                 <!-- /.skill-progress -->
 
                 <div class="progress-item">
+                  <span class="remove"><i class="material-icons" data-toggle="tooltip" title=" Click here to remove Skill. ">remove_circle_outline  </i></span>
                   <span class="progress-title">VB.Net</span>
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
@@ -112,6 +123,7 @@
                 <!-- /.skill-progress -->
 
                 <div class="progress-item">
+                  <span class="remove"><i class="material-icons" data-toggle="tooltip" title=" Click here to remove Skill. ">remove_circle_outline  </i></span>
                   <span class="progress-title">Java Script</span>
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
@@ -123,6 +135,7 @@
                 <!-- /.skill-progress -->
 
                 <div class="progress-item">
+                  <span class="remove"><i class="material-icons" data-toggle="tooltip" title=" Click here to remove Skill. ">remove_circle_outline  </i></span>
                   <span class="progress-title">C++</span>
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0"
@@ -134,12 +147,15 @@
                 <!-- /.skill-progress -->
 
                 <div class="progress-item">
+                  <span class="remove"><i class="material-icons" data-toggle="tooltip" title=" Click here to remove Skill. ">remove_circle_outline  </i></span>
                   <span class="progress-title">MS SQL</span>
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0"
                          aria-valuemax="100" style="width: 70%;"><span class="progress-percent"> 70%</span>
                     </div>
+
                   </div>
+
                   <!-- .progress -->
                 </div>
                 <!-- .skill-progress -->
@@ -165,8 +181,7 @@
 </div>
 <!-- .columns-block -->
 
-
-
+<h3 id="0" onmouseover="mouseOver()" onmouseout="mouseOut()" class="text-center">Adjust browser window to change the background color.</h3>
 </body>
 
 </html>
