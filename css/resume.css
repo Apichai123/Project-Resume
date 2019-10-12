@@ -29,6 +29,7 @@ span{
   margin : 60px auto;
   padding : 0;
   box-shadow : 0 0 0 1px #eaeaea;
+  flex-wrap: wrap;
 }
 
 .blocks {
